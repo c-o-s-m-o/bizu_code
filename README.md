@@ -1,53 +1,51 @@
 # Bizu_Code
 
-# BackEnd fake Rest API json Server
+#_Projeto React Native_
 
-# Instalar json server
+# _____Install Expo______
 
-# ____Comandos____
-
-
-    $ npm init -y
-        
-        Cria um arquivo package.json para a inserção das dependências necessárias.
-
-    $ npm i json-server
-        
-        Download da dependência json-server, incluirá  automaticamente dentro do arquivo packege.json, "json-server": "versão atual usada".
-
-Criar uma pasta chamada bancodb dentro da pasta criar um arquivo chamado db.json, pois o json-server, cria uma api baseada nesse arquivo json.
-
-    Modelo de endpoint 
-    {
-        "produto":[
-            {
-                "id": 1,
-                "name": "exemplo"
-
-            },
-            {
-                "id": 2,
-                "name": "exemplo 2"
-            }
-        ]
-    }
-
-Dentro do arquivo package.json adcionar uma linha da dentro de "script":{}, "start": "" chamando nosso arquivo db.json
-
-    "scripts":{
-        "start": "json-server --watch banco/db.json --port 3001"
-    }
-
-Nessa linha estamos chamndo nossa dependência instalada json-sever , deixamos ela monitorando o aquivo db.json e setamos uma porta para acesso a api.
-
-# Iniciando a API 
-    
-    $ npm start 
+# Baixe o app expo para seu smartphone, Android ou IOS, poderá usar um emulador para android
 
 
-Acesso ao Endpoint:
+" Expo é uma estrutura e uma plataforma para aplicações React universais. É um conjunto de ferramentas e serviços criados em torno de plataformas React Native e nativas que ajudam a desenvolver, construir, implantar e iterar rapidamente em aplicativos iOS, Android e web a partir da mesma base de código JavaScript / TypeScript. ":
 
-    Resources 
-    http://localhost:3001/produto
+Instalando o expo:
 
+	npm install --global expo-cli
 
+Iniciando um novo projeto no expo:
+ 
+	expo init nome-do-projeto
+
+Para mais informações consulte a página oficial do Expo:
+	
+	https://docs.expo.dev/
+
+_______________________ Terminal Linux ___________________________________________
+
+$ expo init BizuCode
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│   There is a new version of expo-cli available (4.12.10).               │
+│   You are currently using expo-cli 4.12.1                               │
+│   Install expo-cli globally using the package manager of your choice;   │
+│   for example: `npm install -g expo-cli` to get the latest version      │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+? Choose a template: › - Use arrow-keys. Return to submit.
+    ----- Managed workflow -----
+❯   blank               a minimal app as clean as an empty canvas
+    blank (TypeScript)  same as blank but with TypeScript configuration
+    tabs (TypeScript)   several example screens and tabs using react-navigation and TypeScript
+    ----- Bare workflow -----
+    minimal             bare and minimal, just the essentials to get you started
+
+___________________________________________________________________________
+
+Com a primeira opção marcada pressione enter e aguarde o download.
+Para startar o projeto use o comando,
+	
+	npm start 
+
+dentro da pasta do projeto criado, logo após no terminal exibirá um QR Code, 
+abra app, expo, leia o código, automaticamente ele exibirá o projeto no smatphone.
